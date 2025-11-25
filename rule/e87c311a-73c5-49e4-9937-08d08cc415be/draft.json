@@ -3,20 +3,19 @@
  "category": "decisionTable",
  "data": {
   "createdAt": "2025-11-25T06:35:05.084Z",
-  "updatedAt": "2025-11-25T06:40:56.744397Z",
+  "updatedAt": "2025-11-25T06:43:47.779316Z",
   "isDeleted": false,
-  "testedAt": "2025-11-25T06:40:49.587Z",
+  "testedAt": "2025-11-25T06:43:47.778Z",
   "publishedAt": "2025-11-25T06:40:56.731Z",
   "entityId": "e87c311a-73c5-49e4-9937-08d08cc415be",
   "name": "Rule1",
-  "commitId": "commit-f9b4f588-d296-4181-a12f-4af216829ed3",
-  "status": "published",
-  "lastVersion": "draft",
-  "isLive": true,
+  "commitId": "commit-43b8ce40-fd3a-401a-af15-2cee75b991ea",
+  "status": "tested",
+  "lastVersion": "0.40",
+  "isLive": false,
   "commitInfo": {
-   "title": "Forked from 0.10",
-   "description": "v4",
-   "timeStamp": "2025-11-25T06:40:56.728Z"
+   "title": "Forked from 0.40",
+   "timeStamp": "2025-11-25T06:43:40.748329789Z"
   },
   "customInput": {
    "name": {
@@ -50,12 +49,12 @@
       "config": {
        "settings": {
         "cache": {
-         "enabled": false,
          "duration": {
           "unit": "d",
           "value": 0
          },
-         "cacheKeys": ""
+         "cacheKeys": "",
+         "enabled": false
         }
        },
        "query": "db.comments.insertOne({})"
@@ -70,6 +69,14 @@
   },
   "conditions": {
    "nodes": {
+    "rule_01": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "rule_02"
+     ],
+     "siblingIndex": 1
+    },
     "rule_02": {
      "value": "",
      "operator": "any",
@@ -87,21 +94,13 @@
      "nodeType": "params",
      "attribute": "name",
      "siblingIndex": 1
-    },
-    "rule_01": {
-     "operator": "and",
-     "nodeType": "group",
-     "children": [
-      "rule_02"
-     ],
-     "siblingIndex": 1
     }
    }
   },
   "firstCustomInput": "name",
   "description": "",
   "policy": "first",
-  "version": "0.40",
+  "version": "draft",
   "type": "decisionTable",
   "dataSetId": "",
   "settings": {
@@ -116,7 +115,7 @@
     "Enabled": false,
     "Duration": {
      "Value": 0,
-     "Unit": ""
+     "Unit": "d"
     },
     "CacheKeys": ""
    },
@@ -125,5 +124,20 @@
   },
   "isDemo": false,
   "schemaVersion": "0.1.1"
- }
+ },
+ "dependencies": [
+  {
+   "entityCommitId": "commit-43b8ce40-fd3a-401a-af15-2cee75b991ea",
+   "entityType": "rule",
+   "entityId": "e87c311a-73c5-49e4-9937-08d08cc415be",
+   "entityVersion": "draft",
+   "entityNodeId": "then-actionData_action_1",
+   "dependencyType": "connector",
+   "dependencyId": "816e7dc6-69a0-494c-9355-929f6181dcef",
+   "dependencyVersion": "live",
+   "isDeleted": false,
+   "createdAt": "2025-11-25T06:43:40.754818Z",
+   "updatedAt": "2025-11-25T06:43:40.754818Z"
+  }
+ ]
 }
