@@ -3,19 +3,19 @@
  "category": "decisionTable",
  "data": {
   "createdAt": "2025-11-25T06:35:05.084Z",
-  "updatedAt": "2025-11-25T08:24:43.382695Z",
+  "updatedAt": "2025-11-25T08:35:20.568823Z",
   "isDeleted": false,
-  "testedAt": "2025-11-25T08:24:43.382Z",
+  "testedAt": "2025-11-25T08:35:20.568Z",
   "publishedAt": "2025-11-25T06:35:38.564Z",
   "entityId": "e87c311a-73c5-49e4-9937-08d08cc415be",
   "name": "Rule1",
-  "commitId": "commit-551e5dde-8cbd-483f-9796-cd16d7111a09",
+  "commitId": "commit-2ddf2665-f328-481e-8f2c-657962036c2c",
   "status": "tested",
   "lastVersion": "draft",
   "isLive": false,
   "commitInfo": {
    "title": "Forked from draft",
-   "timeStamp": "2025-11-25T08:24:35.053557736Z"
+   "timeStamp": "2025-11-25T08:35:08.419752154Z"
   },
   "customInput": {
    "name": {
@@ -69,13 +69,6 @@
   },
   "conditions": {
    "nodes": {
-    "rule_03": {
-     "sourceType": "customInput",
-     "dataType": "string",
-     "nodeType": "params",
-     "attribute": "name",
-     "siblingIndex": 1
-    },
     "rule_01": {
      "operator": "and",
      "nodeType": "group",
@@ -93,6 +86,13 @@
      "leftNode": [
       "rule_03"
      ],
+     "siblingIndex": 1
+    },
+    "rule_03": {
+     "sourceType": "customInput",
+     "dataType": "string",
+     "nodeType": "params",
+     "attribute": "name",
      "siblingIndex": 1
     }
    }
@@ -124,5 +124,20 @@
   },
   "isDemo": false,
   "schemaVersion": "0.1.1"
- }
+ },
+ "dependencies": [
+  {
+   "entityCommitId": "commit-2ddf2665-f328-481e-8f2c-657962036c2c",
+   "entityType": "rule",
+   "entityId": "e87c311a-73c5-49e4-9937-08d08cc415be",
+   "entityVersion": "draft",
+   "entityNodeId": "then-actionData_action_1",
+   "dependencyType": "connector",
+   "dependencyId": "4d9bdb90-134e-4e5e-a1cb-070ea32163f9",
+   "dependencyVersion": "live",
+   "isDeleted": false,
+   "createdAt": "2025-11-25T06:36:41.948232Z",
+   "updatedAt": "2025-11-25T08:23:32.954202Z"
+  }
+ ]
 }
