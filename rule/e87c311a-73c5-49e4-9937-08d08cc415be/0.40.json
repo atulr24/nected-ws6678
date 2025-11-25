@@ -13,7 +13,7 @@
   "commitId": "commit-e893e52d-778d-4f54-b1db-fef10453da39",
   "status": "published",
   "lastVersion": "draft",
-  "isLive": true,
+  "isLive": false,
   "commitInfo": {
    "title": "Forked from 0.10",
    "description": "v4",
@@ -71,6 +71,14 @@
   },
   "conditions": {
    "nodes": {
+    "rule_01": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "rule_02"
+     ],
+     "siblingIndex": 1
+    },
     "rule_02": {
      "value": "",
      "operator": "any",
@@ -87,14 +95,6 @@
      "dataType": "string",
      "nodeType": "params",
      "attribute": "name",
-     "siblingIndex": 1
-    },
-    "rule_01": {
-     "operator": "and",
-     "nodeType": "group",
-     "children": [
-      "rule_02"
-     ],
      "siblingIndex": 1
     }
    }

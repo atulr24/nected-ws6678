@@ -1,15 +1,16 @@
 {
  "entityType": "rule",
  "category": "decisionTable",
+ "live": true,
  "data": {
   "createdAt": "2025-11-25T06:35:05.084Z",
-  "updatedAt": "2025-11-25T07:14:55.987267Z",
+  "updatedAt": "2025-11-25T07:14:55.981Z",
   "isDeleted": false,
   "testedAt": "2025-11-25T07:14:51.707Z",
   "publishedAt": "2025-11-25T07:14:55.974Z",
   "entityId": "e87c311a-73c5-49e4-9937-08d08cc415be",
   "name": "Rule1",
-  "commitId": "commit-6e79baef-bdc4-4eb8-a262-0e3d63013a23",
+  "commitId": "commit-60298a93-edf2-47c9-81c2-0e0a53e3ca82",
   "status": "published",
   "lastVersion": "draft",
   "isLive": true,
