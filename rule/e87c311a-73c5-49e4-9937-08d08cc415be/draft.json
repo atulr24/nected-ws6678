@@ -3,19 +3,19 @@
  "category": "decisionTable",
  "data": {
   "createdAt": "2025-11-25T06:35:05.084Z",
-  "updatedAt": "2025-11-25T07:41:42.14365Z",
+  "updatedAt": "2025-11-25T07:43:33.45556Z",
   "isDeleted": false,
-  "testedAt": "2025-11-25T07:41:42.142Z",
+  "testedAt": "2025-11-25T07:43:33.454Z",
   "publishedAt": "2025-11-25T06:35:38.564Z",
   "entityId": "e87c311a-73c5-49e4-9937-08d08cc415be",
   "name": "Rule1",
-  "commitId": "commit-356a9343-dcdd-4daa-87cb-fb71077cd67e",
+  "commitId": "commit-d398c9b7-72c6-4b2b-b7bf-c93c67aae7cb",
   "status": "tested",
-  "lastVersion": "0.10",
+  "lastVersion": "draft",
   "isLive": false,
   "commitInfo": {
-   "title": "Forked from 0.10",
-   "timeStamp": "2025-11-25T07:41:25.140215992Z"
+   "title": "Forked from draft",
+   "timeStamp": "2025-11-25T07:43:20.337191141Z"
   },
   "customInput": {
    "name": {
@@ -47,17 +47,17 @@
       "entity": "",
       "entityId": "",
       "config": {
-       "query": "db.comments.insertOne({})",
        "settings": {
         "cache": {
+         "enabled": false,
          "duration": {
           "unit": "d",
           "value": 0
          },
-         "cacheKeys": "",
-         "enabled": false
+         "cacheKeys": ""
         }
-       }
+       },
+       "query": "db.comments.insertOne({})"
       }
      }
     },
@@ -69,6 +69,13 @@
   },
   "conditions": {
    "nodes": {
+    "rule_03": {
+     "sourceType": "customInput",
+     "dataType": "string",
+     "nodeType": "params",
+     "attribute": "name",
+     "siblingIndex": 1
+    },
     "rule_01": {
      "operator": "and",
      "nodeType": "group",
@@ -86,13 +93,6 @@
      "leftNode": [
       "rule_03"
      ],
-     "siblingIndex": 1
-    },
-    "rule_03": {
-     "sourceType": "customInput",
-     "dataType": "string",
-     "nodeType": "params",
-     "attribute": "name",
      "siblingIndex": 1
     }
    }
