@@ -3,7 +3,7 @@
  "category": "postgres",
  "data": {
   "createdAt": "2025-11-25T06:34:33.063Z",
-  "updatedAt": "2025-11-25T06:34:52.127916Z",
+  "updatedAt": "2025-11-25T08:23:18.086602Z",
   "isDeleted": false,
   "entityId": "4d9bdb90-134e-4e5e-a1cb-070ea32163f9",
   "name": "postgres",
