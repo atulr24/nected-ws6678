@@ -3,20 +3,20 @@
  "category": "decisionTable",
  "data": {
   "createdAt": "2025-11-25T06:35:05.084Z",
-  "updatedAt": "2025-11-25T06:37:20.857578Z",
+  "updatedAt": "2025-11-25T06:40:56.744397Z",
   "isDeleted": false,
-  "testedAt": "2025-11-25T06:37:15.621Z",
-  "publishedAt": "2025-11-25T06:37:20.839Z",
+  "testedAt": "2025-11-25T06:40:49.587Z",
+  "publishedAt": "2025-11-25T06:40:56.731Z",
   "entityId": "e87c311a-73c5-49e4-9937-08d08cc415be",
   "name": "Rule1",
-  "commitId": "commit-d5d2540f-f33e-4a52-8c7e-cf4faec22a6b",
+  "commitId": "commit-f9b4f588-d296-4181-a12f-4af216829ed3",
   "status": "published",
   "lastVersion": "draft",
   "isLive": true,
   "commitInfo": {
-   "title": "Forked from 0.20",
-   "description": "v3",
-   "timeStamp": "2025-11-25T06:37:20.837Z"
+   "title": "Forked from 0.10",
+   "description": "v4",
+   "timeStamp": "2025-11-25T06:40:56.728Z"
   },
   "customInput": {
    "name": {
@@ -44,11 +44,21 @@
     "actionNode": {
      "actionData_action_1": {
       "name": "action_1",
-      "connectorId": "4d9bdb90-134e-4e5e-a1cb-070ea32163f9",
+      "connectorId": "816e7dc6-69a0-494c-9355-929f6181dcef",
       "entity": "",
       "entityId": "",
       "config": {
-       "query": ""
+       "settings": {
+        "cache": {
+         "enabled": false,
+         "duration": {
+          "unit": "d",
+          "value": 0
+         },
+         "cacheKeys": ""
+        }
+       },
+       "query": "db.comments.insertOne({})"
       }
      }
     },
@@ -60,14 +70,6 @@
   },
   "conditions": {
    "nodes": {
-    "rule_01": {
-     "operator": "and",
-     "nodeType": "group",
-     "children": [
-      "rule_02"
-     ],
-     "siblingIndex": 1
-    },
     "rule_02": {
      "value": "",
      "operator": "any",
@@ -85,13 +87,21 @@
      "nodeType": "params",
      "attribute": "name",
      "siblingIndex": 1
+    },
+    "rule_01": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "rule_02"
+     ],
+     "siblingIndex": 1
     }
    }
   },
   "firstCustomInput": "name",
   "description": "",
   "policy": "first",
-  "version": "0.30",
+  "version": "0.40",
   "type": "decisionTable",
   "dataSetId": "",
   "settings": {
@@ -106,7 +116,7 @@
     "Enabled": false,
     "Duration": {
      "Value": 0,
-     "Unit": "d"
+     "Unit": ""
     },
     "CacheKeys": ""
    },
