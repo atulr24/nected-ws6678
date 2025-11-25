@@ -1,0 +1,14 @@
+{
+ "entityType": "connector",
+ "category": "restAPI",
+ "data": {
+  "createdAt": "2025-11-25T06:34:02.886Z",
+  "updatedAt": "2025-11-25T06:34:15.473354Z",
+  "isDeleted": false,
+  "entityId": "d2d29f91-fdd8-4f44-beb1-cebf2fa8ba20",
+  "name": "restApi",
+  "category": "api",
+  "isAction": true,
+  "isTrigger": true
+ }
+}
