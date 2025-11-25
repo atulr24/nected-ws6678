@@ -1,0 +1,274 @@
+{
+ "entityType": "workflow",
+ "live": true,
+ "data": {
+  "testedAt": "2025-11-25T08:56:53.019Z",
+  "publishedAt": "2025-11-25T08:56:57.13Z",
+  "createdAt": "2025-11-25T08:54:46.059Z",
+  "updatedAt": "2025-11-25T08:56:57.138Z",
+  "isDeleted": false,
+  "entityId": "0b189087-34a2-45ea-aa28-064b614fc3d9",
+  "name": "wf2",
+  "commitId": "commit-fcd67dd6-423d-4b42-a2b5-0e1fdb2002c0",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": true,
+  "commitInfo": {
+   "title": "Forked from 0.20",
+   "description": "v3",
+   "timeStamp": "2025-11-25T08:56:57.123Z"
+  },
+  "startNode": "n_D5cxsM",
+  "version": "0.30",
+  "description": "",
+  "trigger": {
+   "apiNode": "1"
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 0
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": {
+      "name": {
+       "executedValue": "v1",
+       "name": "name",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "name": "v1"
+     },
+     "settings": {
+      "cacheKeys": "",
+      "isEnabled": true,
+      "cacheEnabled": false,
+      "durationUnit": "d",
+      "durationValue": 0,
+      "authType": "none"
+     },
+     "nodeType": "apiTrigger",
+     "name": "Trigger",
+     "runInLoop": {
+      
+     },
+     "blockName": "trigger",
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 130
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_CQztO4",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 205
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_D5cxsM",
+    "type": "setVarNode",
+    "data": {
+     "input": {
+      "key_0": {
+       "value": "Value",
+       "executedValue": "Value",
+       "name": "key_0",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "error": "",
+      "output": {
+       "key_0": "Value"
+      },
+      "resetOutput": {
+       
+      }
+     },
+     "settings": {
+      "errorContinue": false
+     },
+     "nodeType": "setVarNode",
+     "entity": "setVariableNode",
+     "entityId": "n_D5cxsM",
+     "status": "success",
+     "name": "SetVariable",
+     "runInLoop": {
+      
+     },
+     "blockName": "setVariable",
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 335
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_dLZpMX",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 410
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_wRYoI5",
+    "type": "responseNode",
+    "data": {
+     "input": {
+      "version": {
+       "value": "v3",
+       "executedValue": "v3",
+       "name": "version",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "error": "",
+      "output": {
+       "version": "v3"
+      }
+     },
+     "settings": {
+      "timeout": 10,
+      "timeoutAsync": 20,
+      "errorContinue": false
+     },
+     "nodeType": "responseNode",
+     "entity": "responseNode",
+     "entityId": "n_wRYoI5",
+     "status": "success",
+     "name": "Response",
+     "runInLoop": {
+      
+     },
+     "blockName": "response",
+     "testedAt": "2025-11-25T08:56:53.019Z"
+    }
+   },
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 540
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_2EKgQX",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   }
+  ],
+  "edges": [
+   {
+    "style": {
+     "strokeWidth": 1,
+     "stroke": "gray"
+    },
+    "id": "e_UWTSJW",
+    "source": "1",
+    "target": "n_CQztO4",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_aF26s7",
+    "source": "n_D5cxsM",
+    "target": "n_dLZpMX",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_kdUkPZ",
+    "source": "n_CQztO4",
+    "target": "n_D5cxsM",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_vh6WJn",
+    "source": "n_wRYoI5",
+    "target": "n_2EKgQX",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "strokeWidth": 1,
+     "stroke": "gray"
+    },
+    "id": "e_gGEbDs",
+    "source": "n_dLZpMX",
+    "target": "n_wRYoI5",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  },
+  "isDemo": false
+ }
+}

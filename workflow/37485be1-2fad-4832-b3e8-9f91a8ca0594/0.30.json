@@ -1,0 +1,403 @@
+{
+ "entityType": "workflow",
+ "live": true,
+ "data": {
+  "testedAt": "2025-11-25T06:57:42.568Z",
+  "publishedAt": "2025-11-25T06:57:48.591Z",
+  "createdAt": "2025-11-25T06:48:41.773Z",
+  "updatedAt": "2025-11-25T06:57:48.6Z",
+  "isDeleted": false,
+  "entityId": "37485be1-2fad-4832-b3e8-9f91a8ca0594",
+  "name": "Wf1",
+  "commitId": "commit-4feb7bf1-9400-41e8-9c1f-5d16ef03b153",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Forked from 0.20",
+   "description": "v3",
+   "timeStamp": "2025-11-25T06:57:48.585Z"
+  },
+  "startNode": "n_EJGuJJ",
+  "version": "0.30",
+  "description": "",
+  "trigger": {
+   "apiNode": "1"
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 0
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": {
+      "Name": {
+       "executedValue": "Atul",
+       "name": "Name",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "Name": "Atul"
+     },
+     "settings": {
+      "isEnabled": true,
+      "cacheEnabled": false,
+      "durationUnit": "d",
+      "durationValue": 0,
+      "authType": "none",
+      "cacheKeys": ""
+     },
+     "nodeType": "apiTrigger",
+     "name": "Trigger",
+     "runInLoop": {
+      
+     },
+     "blockName": "trigger",
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 130
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_ik5H6T",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 205
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_EJGuJJ",
+    "type": "rule",
+    "data": {
+     "executedValue": {
+      "output": [
+       {
+        "rowError": null,
+        "defaultOutputData": true,
+        "rowId": 1
+       }
+      ],
+      "ruleId": "97f129d0-0444-42ac-91e6-c6d0a0b26a79",
+      "warnings": [],
+      "additionalOutput": {
+       
+      },
+      "error": "",
+      "action": null
+     },
+     "settings": {
+      "timeout": 10,
+      "runAction": false,
+      "actionInSync": false,
+      "timeoutAsync": 20,
+      "errorContinue": false
+     },
+     "nodeType": "dtNode",
+     "entity": "rule",
+     "entityId": "97f129d0-0444-42ac-91e6-c6d0a0b26a79",
+     "status": "success",
+     "name": "Rule1Wf1",
+     "runInLoop": {
+      
+     },
+     "blockName": "decisionTable",
+     "testedAt": "2025-11-25T06:57:42.568Z"
+    }
+   },
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 335
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_7pXSXp",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 410
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_KJS0mU",
+    "type": "rule",
+    "data": {
+     "input": {
+      "name": {
+       "value": "",
+       "name": "name",
+       "dataType": "string",
+       "source": "Rule1Wf1",
+       "attribute": "ruleId"
+      }
+     },
+     "executedValue": {
+      "output": [
+       {
+        "rowId": 1,
+        "keyName": "Value3",
+        "rowError": null,
+        "defaultOutputData": true
+       }
+      ],
+      "ruleId": "5681b101-7522-4aad-ab5d-d71b764dc59e",
+      "warnings": [],
+      "additionalOutput": {
+       
+      },
+      "error": "",
+      "action": null
+     },
+     "settings": {
+      "timeoutAsync": 20,
+      "errorContinue": false,
+      "timeout": 10,
+      "runAction": false,
+      "actionInSync": false
+     },
+     "nodeType": "dtNode",
+     "entity": "rule",
+     "entityId": "5681b101-7522-4aad-ab5d-d71b764dc59e",
+     "status": "success",
+     "name": "Rule2Wf1",
+     "runInLoop": {
+      
+     },
+     "blockName": "decisionTable",
+     "testedAt": "2025-11-25T06:57:42.568Z"
+    }
+   },
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 540
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_1u9mTq",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "y": 615,
+     "x": 493.046875
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_Kf2wI9",
+    "type": "responseNode",
+    "data": {
+     "input": {
+      "res": {
+       "value": "v3",
+       "executedValue": "v3",
+       "name": "res",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "error": "",
+      "output": {
+       "res": "v3"
+      }
+     },
+     "settings": {
+      "timeoutAsync": 20,
+      "errorContinue": false,
+      "timeout": 10
+     },
+     "nodeType": "responseNode",
+     "entity": "responseNode",
+     "entityId": "n_Kf2wI9",
+     "status": "success",
+     "name": "Response",
+     "runInLoop": {
+      
+     },
+     "blockName": "response",
+     "testedAt": "2025-11-25T06:57:42.568Z"
+    }
+   },
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 745
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_wqqXzA",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   }
+  ],
+  "edges": [
+   {
+    "style": {
+     "strokeWidth": 1,
+     "stroke": "gray"
+    },
+    "id": "e_jks6Gk",
+    "source": "1",
+    "target": "n_ik5H6T",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_XY7nIu",
+    "source": "n_EJGuJJ",
+    "target": "n_7pXSXp",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_jprNTu",
+    "source": "n_ik5H6T",
+    "target": "n_EJGuJJ",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_yw7LqT",
+    "source": "n_KJS0mU",
+    "target": "n_1u9mTq",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_ETunN9",
+    "source": "n_7pXSXp",
+    "target": "n_KJS0mU",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_zgSRO8",
+    "source": "n_Kf2wI9",
+    "target": "n_wqqXzA",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_uzSbkU",
+    "source": "n_1u9mTq",
+    "target": "n_Kf2wI9",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  },
+  "isDemo": false
+ },
+ "dependencies": [
+  {
+   "entityCommitId": "commit-4feb7bf1-9400-41e8-9c1f-5d16ef03b153",
+   "entityType": "workflow",
+   "entityId": "37485be1-2fad-4832-b3e8-9f91a8ca0594",
+   "entityVersion": "0.30",
+   "entityNodeId": "n_KJS0mU",
+   "dependencyType": "rule",
+   "dependencyId": "5681b101-7522-4aad-ab5d-d71b764dc59e",
+   "dependencyVersion": "0.30",
+   "isDeleted": false,
+   "createdAt": "2025-11-25T06:57:21.263617Z",
+   "updatedAt": "2025-11-25T06:57:48.596211Z"
+  },
+  {
+   "entityCommitId": "commit-4feb7bf1-9400-41e8-9c1f-5d16ef03b153",
+   "entityType": "workflow",
+   "entityId": "37485be1-2fad-4832-b3e8-9f91a8ca0594",
+   "entityVersion": "0.30",
+   "entityNodeId": "n_EJGuJJ",
+   "dependencyType": "rule",
+   "dependencyId": "97f129d0-0444-42ac-91e6-c6d0a0b26a79",
+   "dependencyVersion": "0.30",
+   "isDeleted": false,
+   "createdAt": "2025-11-25T06:57:21.261835Z",
+   "updatedAt": "2025-11-25T06:57:48.596211Z"
+  }
+ ]
+}

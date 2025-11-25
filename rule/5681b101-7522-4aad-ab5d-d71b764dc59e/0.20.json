@@ -1,0 +1,135 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "live": true,
+ "data": {
+  "createdAt": "2025-11-25T06:53:48.946Z",
+  "updatedAt": "2025-11-25T06:54:29.546Z",
+  "isDeleted": false,
+  "testedAt": "2025-11-25T06:54:24.067Z",
+  "publishedAt": "2025-11-25T06:54:29.54Z",
+  "entityId": "5681b101-7522-4aad-ab5d-d71b764dc59e",
+  "name": "Rule2Wf1",
+  "commitId": "commit-1e6aebec-e857-4418-bf26-e2216629e6dc",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Forked from 0.10",
+   "description": "v2",
+   "timeStamp": "2025-11-25T06:54:29.538Z"
+  },
+  "customInput": {
+   "name": {
+    "name": "name",
+    "dataType": "string",
+    "executedValue": "Atul"
+   }
+  },
+  "decisionTable": {
+   "rows": {
+    "rule_01": {
+     "firstOutputData": "output_GdCobA",
+     "isEnabled": true
+    }
+   },
+   "properties": {
+    "rule_03": {
+     "type": "simpleCondition"
+    }
+   },
+   "results": {
+    "result_Fz2elQ": {
+     "dataType": "string",
+     "keyName": "keyName"
+    }
+   },
+   "firstRow": "rule_01",
+   "firstProperty": "rule_03",
+   "firstResult": "result_Fz2elQ"
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "output_GdCobA": {
+      "name": "keyName",
+      "dataType": "string",
+      "value": "Value2",
+      "executedValue": "Value2"
+     }
+    }
+   },
+   "else": {
+    
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_01": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "rule_02"
+     ],
+     "siblingIndex": 1
+    },
+    "rule_02": {
+     "value": "",
+     "operator": "eq",
+     "dataType": "string",
+     "nodeType": "condition",
+     "parent": "rule_01",
+     "leftNode": [
+      "rule_03"
+     ],
+     "rightNode": [
+      "rhs_aMiSTH"
+     ],
+     "siblingIndex": 1
+    },
+    "rule_03": {
+     "sourceType": "customInput",
+     "dataType": "string",
+     "nodeType": "params",
+     "attribute": "name",
+     "siblingIndex": 1
+    },
+    "rhs_aMiSTH": {
+     "sourceType": "customInput",
+     "dataType": "string",
+     "nodeType": "params",
+     "attribute": "name",
+     "parent": "rule_02",
+     "siblingIndex": 1
+    }
+   }
+  },
+  "firstCustomInput": "name",
+  "description": "",
+  "policy": "first",
+  "version": "0.20",
+  "type": "decisionTable",
+  "dataSetId": "",
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": "d"
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  },
+  "isDemo": false,
+  "schemaVersion": "0.1.1"
+ }
+}
