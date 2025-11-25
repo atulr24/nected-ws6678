@@ -1,0 +1,90 @@
+{
+ "entityType": "rule",
+ "category": "simpleRule",
+ "data": {
+  "createdAt": "2025-11-25T12:23:50.222Z",
+  "updatedAt": "2025-11-25T12:23:50.222Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "3f7f2051-6f4d-4a0a-a338-f2fd1e661583",
+  "name": "Rule12",
+  "commitId": "commit-cc1282ed-d8fa-44c8-b55e-ae93f1f857e3",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-11-25 12:23:50",
+   "timeStamp": "2025-11-25T12:23:50.222476981Z"
+  },
+  "decisionTable": {
+   
+  },
+  "action": {
+   "then": {
+    
+   },
+   "else": {
+    
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_02": {
+     "nodeType": "condition",
+     "parent": "rule_01",
+     "leftNode": [
+      "rule_03"
+     ],
+     "rightNode": [
+      "rule_04"
+     ],
+     "siblingIndex": 1
+    },
+    "rule_03": {
+     "nodeType": "params",
+     "parent": "rule_02",
+     "siblingIndex": 1
+    },
+    "rule_04": {
+     "value": "",
+     "nodeType": "constant",
+     "parent": "rule_02",
+     "siblingIndex": 1
+    },
+    "rule_01": {
+     "nodeType": "group",
+     "children": [
+      "rule_02"
+     ],
+     "siblingIndex": 1
+    }
+   },
+   "startNode": "rule_01"
+  },
+  "description": "",
+  "version": "draft",
+  "type": "simpleRule",
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  },
+  "isDemo": false,
+  "schemaVersion": "0.1.1"
+ }
+}
