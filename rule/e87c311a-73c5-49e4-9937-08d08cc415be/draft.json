@@ -3,20 +3,19 @@
  "category": "decisionTable",
  "data": {
   "createdAt": "2025-11-25T06:35:05.084Z",
-  "updatedAt": "2025-11-25T08:23:32.964305Z",
+  "updatedAt": "2025-11-25T08:24:43.382695Z",
   "isDeleted": false,
-  "testedAt": "2025-11-25T08:23:24.897Z",
-  "publishedAt": "2025-11-25T08:23:32.947Z",
+  "testedAt": "2025-11-25T08:24:43.382Z",
+  "publishedAt": "2025-11-25T06:35:38.564Z",
   "entityId": "e87c311a-73c5-49e4-9937-08d08cc415be",
   "name": "Rule1",
-  "commitId": "commit-1636d824-fa2a-41bf-b9b7-e1ba7ce36e8e",
-  "status": "published",
+  "commitId": "commit-551e5dde-8cbd-483f-9796-cd16d7111a09",
+  "status": "tested",
   "lastVersion": "draft",
-  "isLive": true,
+  "isLive": false,
   "commitInfo": {
-   "title": "Forked from 0.30",
-   "description": "v4",
-   "timeStamp": "2025-11-25T08:23:32.945Z"
+   "title": "Forked from draft",
+   "timeStamp": "2025-11-25T08:24:35.053557736Z"
   },
   "customInput": {
    "name": {
@@ -44,11 +43,21 @@
     "actionNode": {
      "actionData_action_1": {
       "name": "action_1",
-      "connectorId": "4d9bdb90-134e-4e5e-a1cb-070ea32163f9",
+      "connectorId": "816e7dc6-69a0-494c-9355-929f6181dcef",
       "entity": "",
       "entityId": "",
       "config": {
-       "query": ""
+       "query": "db.comments.insertOne({})",
+       "settings": {
+        "cache": {
+         "enabled": false,
+         "duration": {
+          "unit": "d",
+          "value": 0
+         },
+         "cacheKeys": ""
+        }
+       }
       }
      }
     },
@@ -60,6 +69,13 @@
   },
   "conditions": {
    "nodes": {
+    "rule_03": {
+     "sourceType": "customInput",
+     "dataType": "string",
+     "nodeType": "params",
+     "attribute": "name",
+     "siblingIndex": 1
+    },
     "rule_01": {
      "operator": "and",
      "nodeType": "group",
@@ -78,20 +94,13 @@
       "rule_03"
      ],
      "siblingIndex": 1
-    },
-    "rule_03": {
-     "sourceType": "customInput",
-     "dataType": "string",
-     "nodeType": "params",
-     "attribute": "name",
-     "siblingIndex": 1
     }
    }
   },
   "firstCustomInput": "name",
   "description": "",
   "policy": "first",
-  "version": "0.80",
+  "version": "draft",
   "type": "decisionTable",
   "dataSetId": "",
   "settings": {
@@ -106,7 +115,7 @@
     "Enabled": false,
     "Duration": {
      "Value": 0,
-     "Unit": "d"
+     "Unit": ""
     },
     "CacheKeys": ""
    },
