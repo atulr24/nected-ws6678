@@ -1,0 +1,149 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "live": true,
+ "data": {
+  "createdAt": "2025-11-25T06:35:05.084Z",
+  "updatedAt": "2025-11-25T06:36:39.942Z",
+  "isDeleted": false,
+  "testedAt": "2025-11-25T06:36:29.915Z",
+  "publishedAt": "2025-11-25T06:36:39.933Z",
+  "entityId": "e87c311a-73c5-49e4-9937-08d08cc415bf",
+  "name": "Rule1",
+  "commitId": "commit-647c53f6-9bdf-4704-9d71-fdc3d535d30d",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Forked from 0.10",
+   "description": "v2",
+   "timeStamp": "2025-11-25T06:36:39.93Z"
+  },
+  "customInput": {
+   "name": {
+    "name": "name",
+    "dataType": "string",
+    "executedValue": "Atul"
+   }
+  },
+  "decisionTable": {
+   "rows": {
+    "rule_01": {
+     "isEnabled": true
+    }
+   },
+   "properties": {
+    "rule_03": {
+     "type": "simpleCondition"
+    }
+   },
+   "firstRow": "rule_01",
+   "firstProperty": "rule_03"
+  },
+  "action": {
+   "then": {
+    "actionNode": {
+     "actionData_action_1": {
+      "name": "action_1",
+      "connectorId": "d2d29f91-fdd8-4f44-beb1-cebf2fa8ba20",
+      "entity": "",
+      "entityId": "",
+      "config": {
+       "settings": {
+        "cache": {
+         "enabled": false,
+         "duration": {
+          "unit": "d",
+          "value": 0
+         },
+         "cacheKeys": ""
+        }
+       },
+       "queryParams": [],
+       "path": "/posts/3",
+       "query": "",
+       "method": "GET",
+       "headers": []
+      }
+     }
+    },
+    "firstActionNode": "actionData_action_1"
+   },
+   "else": {
+    
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_01": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "rule_02"
+     ],
+     "siblingIndex": 1
+    },
+    "rule_02": {
+     "value": "",
+     "operator": "any",
+     "dataType": "string",
+     "nodeType": "condition",
+     "parent": "rule_01",
+     "leftNode": [
+      "rule_03"
+     ],
+     "siblingIndex": 1
+    },
+    "rule_03": {
+     "sourceType": "customInput",
+     "dataType": "string",
+     "nodeType": "params",
+     "attribute": "name",
+     "siblingIndex": 1
+    }
+   }
+  },
+  "firstCustomInput": "name",
+  "description": "",
+  "policy": "first",
+  "version": "0.20",
+  "type": "decisionTable",
+  "dataSetId": "",
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": "d"
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  },
+  "isDemo": false,
+  "schemaVersion": "0.1.1"
+ },
+ "dependencies": [
+  {
+   "entityCommitId": "commit-647c53f6-9bdf-4704-9d71-fdc3d535d30d",
+   "entityType": "rule",
+   "entityId": "e87c311a-73c5-49e4-9937-08d08cc415be",
+   "entityVersion": "0.20",
+   "entityNodeId": "then-actionData_action_1",
+   "dependencyType": "connector",
+   "dependencyId": "d2d29f91-fdd8-4f44-beb1-cebf2fa8ba20",
+   "dependencyVersion": "live",
+   "isDeleted": false,
+   "createdAt": "2025-11-25T06:35:58.500886Z",
+   "updatedAt": "2025-11-25T06:36:39.940025Z"
+  }
+ ]
+}
